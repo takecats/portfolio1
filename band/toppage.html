@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="StyleSheet1.css" type="text/css" media="screen" />
     <link rel="shortcut icon" href="img/logomb.png" />
     <meta charset="utf-8" />
-    <title>ZOODB</title>
+    <title>Portfolio - 公式</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Roboto:wght@500&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
@@ -47,13 +47,13 @@
     </div>
         <script>
             const hamtog = document.getElementById('ham_base');
-            const navbtn = document.getElementById('nav_b')
-            const navp = document.getElementById('nav_p')
+            const navbtn = document.getElementById('nav_b');
+            const navp = document.getElementById('nav_p');
 
             navbtn.addEventListener('click', function () {
                 hamtog.classList.toggle('right');
-                navbtn.classList.toggle('hamoff')
-                navp.classList.toggle('hamoff')
+                navbtn.classList.toggle('hamoff');
+                navp.classList.toggle('hamoff');
             });
         </script>
         <div id="top_photo">
@@ -88,11 +88,24 @@
                         6/19 1st Album「Element」Release
                     </div>
                 </div>
-                <a href="NEWSpage.html" class="topixmore">
+                <a href="NEWSpage.html" id="topixmore">
                     <div>
-                        <p>MORE</p>
+                        <p id="topixmore_a">MORE</p>
                     </div>
                 </a>
+                <script>
+                    const topmore = document.getElementById('topixmore');
+                    const topmorep = document.getElementById('topixmore_a');
+
+                    topmore.addEventListener('mouseover', function (event) {
+                        topmorep.classList.add('topoff');
+                        topmore.classList.add('topof');
+                    });
+                    topmore.addEventListener('mouseleave', function (event) {
+                        topmorep.classList.remove('topoff');
+                        topmore.classList.remove('topof');
+                    });
+                </script>
             </div>
             <div class="disco_head"><p>DISCOGRAPHY</p></div>
             <div id="disco_graph">
@@ -100,12 +113,26 @@
                 <div class="disco_photo"><img src="img/photo/tower.png" alt="TOP" border="0"><br />4th Single「Tower」</div>
                 <div class="disco_photo"><img src="img/photo/dune.png" alt="TOP" border="0"><br />3rd Single「DUNE」</div>
                 <div>
-                    <a href="toppage.html" class="discomore">
+                    <a href="toppage.html" id="discomore">
                         <div>
-                            <p>MORE</p>
+                            <p id="discomore_a">MORE</p>
                         </div>
                     </a>
+                    <script>
+                        const discomore = document.getElementById('discomore');
+                        const discomorep = document.getElementById('discomore_a');
+
+                        discomore.addEventListener('mouseover', function (event) {
+                            discomorep.classList.add('discoff');
+                            discomore.classList.add('discof');
+                        });
+                        discomore.addEventListener('mouseleave', function (event) {
+                            discomorep.classList.remove('discoff');
+                            discomore.classList.remove('discof');
+                        });
+                    </script>
                 </div>
+
             </div>
             <div class="video_head"><p>VIDEO</p></div>
             <div class="video_ply">

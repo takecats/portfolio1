@@ -126,12 +126,12 @@
     animation-duration: 2s;
     animation-fill-mode: forwards;
     animation-delay: 2s;
-    opacity: 0;
+    opacity: 1;
 }
 
 @keyframes rightham {
     0% {
-        opacity: 0;
+        opacity: 1;
     }
 
     100% {
@@ -143,28 +143,28 @@
 #ham_bu {
     display: flex;
     transition: all 0.5s;
-    height: 65px;
-    width: 65px;
+    height: 120px;
+    width: 120px;
 }
 
 #nav_b::after,
 #nav_b::before {
     position: absolute;
+    margin : 0;
     top: calc(50% - 1px);
     content: '';
-    width: 50px;
+    width: 100px;
     height: 3px;
-    display: block;
     background: #FFFFFF;
     transition: transform 0.3s;
 }
 
 #nav_b::before {
-    transform: translateY(-20px);
+    transform: translateY(-40px);
 }
 
 #nav_b::after {
-    transform: translateY(20px)
+    transform: translateY(40px)
 }
 
 #nav_b.hamoff::before {
@@ -180,7 +180,7 @@
     transition: opacity 0.3s;
     opacity: 1;
     color: #FFFFFF;
-    font-size: 23px;
+    font-size: 50px;
     font-family: 'Kosugi Maru', sans-serif;
 }
 #nav_p.hamoff { 
@@ -188,8 +188,8 @@
 }
 
 #nav_b {
-    height: 65px;
-    width: 65px;
+    height: 120px;
+    width: 120px;
     background: none;
     border: none;
     display: flex;
@@ -236,7 +236,7 @@
     margin: auto;
     display: block;
     width: 92%;
-    max-width: 1500px;
+    max-width: 1290px;
     color: white;
     font-family: 'Noto Sans JP', sans-serif;
 }
@@ -263,6 +263,7 @@
     margin: auto;
     font-family: 'Noto Sans JP', sans-serif;
     padding-bottom:3px;
+    max-width: 900px;
 }
 
 .topix_cu {
@@ -351,10 +352,10 @@
     display: flex;
     align-items: center;
     padding-left: 50px;
-    font-size: 30px;
+    font-size: 28px;
 }
 
-.topixmore {
+#topixmore {
     margin: auto;
     display: flex;
     margin-top: 30px;
@@ -364,12 +365,38 @@
     align-items: center;
     justify-content: center;
     text-decoration: none;
+    position: relative;
+    transition: border 0.6s cubic-bezier(0.2,0.8,0.6,0.9);
+    overflow: hidden;
 }
 
-    .topixmore div p {
-        display: block;
-        color: #FFFFFF;
-        font-size: 20px;
+#topixmore::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    background: #FFFFFF;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    z-index: -1;
+    transition-duration: 0.5s;
+}
+
+    #topixmore.topof::after {
+        transform: translate(0,0);
+    }
+
+#topixmore_a {
+    display: block;
+    font-size: 20px;
+    z-index: 1;
+    color: #FFFFFF;
+    transition-duration:0.5s;
+}
+
+    #topixmore_a.topoff {
+        color: #2b2b2b;
     }
 
 /*TOP-DISCOGRPHY*/
@@ -405,23 +432,50 @@
         width: 300px;
     }
 
-.discomore {
-    margin: auto;
-    display: flex;
+
+
+#discomore {
     margin: 10px;
+    display: flex;
     border: 1px solid #FFFFFF;
     width: 300px;
     height: 300px;
     align-items: center;
     justify-content: center;
     text-decoration: none;
+    position: relative;
+    transition: border 0.6s cubic-bezier(0.2,0.8,0.6,0.9);
+    overflow: hidden;
 }
 
-.discomore div p {
+    #discomore::after {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        background: #FFFFFF;
+        width: 100%;
+        height: 100%;
+        transform: translateY(100%);
+        z-index: -1;
+        transition-duration: 0.5s;
+    }
+
+    #discomore.discof::after {
+        transform: translate(0,0);
+    }
+
+#discomore_a {
     display: block;
+    font-size: 20px;
+    z-index: 1;
     color: #FFFFFF;
-    font-size: 25px;
+    transition-duration: 0.5s;
 }
+
+    #discomore_a.discoff {
+        color: #2b2b2b;
+    }
 
 .video_head {
     padding-top: 80px;
