@@ -1,0 +1,117 @@
+﻿
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="StyleSheet1.css" type="text/css" media="screen" />
+    <link rel="shortcut icon" href="img/logomb.png" />
+    <meta charset="utf-8" />
+    <title>ZOODB</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Roboto:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap');
+    </style>
+</head>
+<body>
+    <!--header-->
+    <div id="header">
+        <div id="header_icon"><a href="toppage.html"><img src="img/logow.png" alt="top"></a></div>
+    </div>
+    <div id="right_menu">
+        <div id="ham_bu"><button id="nav_b" type="button"><p id="nav_p">MENU</p></button></div><!--hamburger_buttom-->
+    </div>
+    <!--hamburger_menu-->
+    <div id="ham_base">
+        <div class="ham_komoku"><a href="toppage.html">NEWS</a></div>
+        <div class="ham_komoku"><a href="toppage.html">PROFILE</a></div><br />
+        <div class="ham_komoku"><a href="toppage.html">MEDIA</a></div>
+        <div class="ham_komoku"><a href="toppage.html">LIVE</a></div>
+        <div class="ham_komoku"><a href="toppage.html">DISCOGRAPHY</a></div><br />
+        <div class="ham_komoku"><a href="toppage.html">VIDEO</a></div>
+        <div class="ham_komoku"><a href="toppage.html">GOODS</a></div><br/>
+        <div class="snss">
+            <a href="toppage.html" class="twhpicon">
+                <div>
+                    <img src="img/twi.png" border="0" title="Twitter" class="twhiplogo">
+                </div>
+            </a>
+
+            <a href="toppage.html" class="twhpicon">
+                <div>
+                    <img src="img/cam.png" border="0" title="instagram" class="twhiplogo">
+                </div>
+            </a>
+        </div>
+    </div>
+        <script>
+            const hamtog = document.getElementById('ham_base');
+            const navbtn = document.getElementById('nav_b')
+            const navp = document.getElementById('nav_p')
+
+            navbtn.addEventListener('click', function () {
+                hamtog.classList.toggle('right');
+                navbtn.classList.toggle('hamoff')
+                navp.classList.toggle('hamoff')
+            });
+        </script>
+        <div id="top_photo">
+            <img src="img/photo/topphoto3.jpeg" alt="TOP" class="topp1">
+            <img src="img/logow.png" alt="top" class="logogo">
+        </div>
+        <!--end header-->
+        <div id="base">
+            <div class="base_head"><p>NEWS</p></div>
+            <div class="topixco">
+                <div class="topix_cu">
+                    <div class="topix_media">
+                        MEDIA<br />2023/6/21
+                    </div>
+                    <div class="topixbun">
+                        MEDIA情報「Rock Stone 7月号」掲載
+                    </div>
+                </div>
+                <div class="topix_cu">
+                    <div class="topix_tour">
+                        LIVE<br />2023/6/20
+                    </div>
+                    <div class="topixbun">
+                        1st Album Release Tour「Element TOUR」開催決定
+                    </div>
+                </div>
+                <div class="topix_cu">
+                    <div class="topix_disco">
+                        RELEASE<br />2023/6/19
+                    </div>
+                    <div class="topixbun">
+                        6/19 1st Album「Element」Release
+                    </div>
+                </div>
+                <a href="NEWSpage.html" class="topixmore">
+                    <div>
+                        <p>MORE</p>
+                    </div>
+                </a>
+            </div>
+            <div class="disco_head"><p>DISCOGRAPHY</p></div>
+            <div id="disco_graph">
+                <div class="disco_photo"><img src="img/photo/element.png" alt="TOP" border="0"><br />1st Album「Element」</div>
+                <div class="disco_photo"><img src="img/photo/tower.png" alt="TOP" border="0"><br />4th Single「Tower」</div>
+                <div class="disco_photo"><img src="img/photo/dune.png" alt="TOP" border="0"><br />3rd Single「DUNE」</div>
+                <div>
+                    <a href="toppage.html" class="discomore">
+                        <div>
+                            <p>MORE</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="video_head"><p>VIDEO</p></div>
+            <div class="video_ply">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/TanZP7g13sk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+        <center>hello neko</center>
+</body>
+</html>
