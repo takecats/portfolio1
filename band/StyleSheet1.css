@@ -184,6 +184,7 @@
     font-size: 45px;
     font-family: 'Kosugi Maru', sans-serif;
     width: 100%;
+    border: 2px solid green;
 }
 #nav_p.hamoff { 
     opacity: 0;
@@ -196,6 +197,7 @@
     border: none;
     display: flex;
     position: fixed;
+    border:2px solid red;
 }
 
 /*ハンバーガーメニュー*/
