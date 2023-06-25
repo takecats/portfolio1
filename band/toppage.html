@@ -22,37 +22,52 @@
     <div id="nav_b" type="button"><p id="nav_p">MENU</p></div><!--hamburger_buttom-->
     <!--hamburger_menu-->
     <div id="ham_base">
-        <div class="ham_komoku"><a href="toppage.html">NEWS</a></div>
-        <div class="ham_komoku"><a href="toppage.html">PROFILE</a></div><br />
-        <div class="ham_komoku"><a href="toppage.html">MEDIA</a></div>
-        <div class="ham_komoku"><a href="toppage.html">LIVE</a></div>
-        <div class="ham_komoku"><a href="toppage.html">DISCOGRAPHY</a></div><br />
-        <div class="ham_komoku"><a href="toppage.html">VIDEO</a></div>
-        <div class="ham_komoku"><a href="toppage.html">GOODS</a></div><br/>
-        <div class="snss">
-            <a href="toppage.html" class="twhpicon">
-                <div>
-                    <img src="img/twi.png" border="0" title="Twitter" class="twhiplogo">
-                </div>
-            </a>
-
-            <a href="toppage.html" class="twhpicon">
-                <div>
-                    <img src="img/cam.png" border="0" title="instagram" class="twhiplogo">
-                </div>
-            </a>
+        <div id="ham_menu">
+            <div class="ham_komoku"><a href="toppage.html">NEWS</a></div>
+            <div class="ham_komoku"><a href="toppage.html">PROFILE</a></div>
+            <div class="ham_komoku"><a href="toppage.html"></a></div>
+            <div class="ham_komoku"><a href="toppage.html">MEDIA</a></div>
+            <div class="ham_komoku"><a href="toppage.html">LIVE</a></div>
+            <div class="ham_komoku"><a href="toppage.html">DISCOGRAPHY</a></div>
+            <div class="ham_komoku"><a href="toppage.html"></a></div>
+            <div class="ham_komoku"><a href="toppage.html">VIDEO</a></div>
+            <div class="ham_komoku"><a href="toppage.html">GOODS</a></div>
+            <div class="ham_komoku"><a href="toppage.html"></a></div>
         </div>
+        <!--<div class="snss">
+        <a href="toppage.html" class="twhpicon">
+            <div>
+                <img src="img/twi.png" border="0" title="Twitter" class="twhiplogo">
+            </div>
+        </a>
+
+        <a href="toppage.html" class="twhpicon">
+            <div>
+                <img src="img/cam.png" border="0" title="instagram" class="twhiplogo">
+            </div>
+        </a>
+        </div>-->
     </div>
         <script>
-            const hamtog = document.getElementById('ham_base');
             const navbtn = document.getElementById('nav_b');
             const navp = document.getElementById('nav_p');
+            var  hamtog = document.getElementById('ham_base');
+
+            hamtog.style.right = '-' + window.innerWidth + 'px';
+            hamtog.style.width = window.innerWidth + 'px';
+
 
             navbtn.addEventListener('click', function () {
-                hamtog.classList.toggle('right');
+                if ( hamtog.style.right == '-' + window.innerWidth + 'px' ) {
+                    hamtog.style.right = 0 + 'px';
+                }else{
+                    hamtog.style.right = '-' + window.innerWidth + 'px';
+                };
+
                 navbtn.classList.toggle('hamoff');
                 navp.classList.toggle('hamoff');
-            });
+                });
+            
         </script>
         <div id="top_photo">
             <img src="img/photo/topphoto3.jpeg"  alt="TOP" id="topp1">

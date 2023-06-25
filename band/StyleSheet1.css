@@ -193,31 +193,29 @@
     margin: 0px;
     position: fixed;
     z-index: 9;
-    width: 100%;
-    max-width: 600px;
-    z-index: 10;
     transition: right 0.6s cubic-bezier(0.2,0.8,0.6,0.9);
-    right: -600px;
     background-color: rgba(170,170,170,0.98);
     opacity: 0.9;
-    height: 100%;
     padding-top: 60px;
+    height: 100%;
 }
 
-#ham_base.right {
-    right: 0px;
+#ham_menu {
+    height: 90%;
+    margin-top: 50px;
 }
 
 .ham_komoku {
-    margin-top: 20px;
-    margin-left: 20px
+    margin-top: 15px;
+    margin-left: 10%;
+    height: 4%;
 }
 
 
     .ham_komoku a {
         color: #4e454a;
         font-family: 'Montserrat', sans-serif;
-        font-size: 45px;
+        font-size: 5vh;
         text-decoration: none;
     }
 
