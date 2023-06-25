@@ -60,12 +60,12 @@
     animation-duration: 2s;
     animation-fill-mode: forwards;
     animation-delay: 2s;
-    opacity: 0;
+    opacity: 1;
 }
 
 @keyframes headlogo {
     0% {
-        opacity: 0;
+        opacity: 1;
     }
 
     100% {
@@ -113,12 +113,16 @@
 }
 
 
-#right_menu {
+/*ハンバーガーボタン*/
+#ham_bu {
+    display: flex;
+    transition: all 0.5s;
+    height: 120px;
+    width: 120px;
     background: none;
     border: none;
     z-index: 20;
-    display: block;
-    margin-top: 10px;
+    margin-top: 50px;
     right: 20px;
     position: fixed;
     text-align: center;
@@ -126,12 +130,13 @@
     animation-duration: 2s;
     animation-fill-mode: forwards;
     animation-delay: 2s;
-    opacity: 0;
+    opacity: 1;
+    border: 2px solid blue;
 }
 
 @keyframes rightham {
     0% {
-        opacity: 0;
+        opacity: 1;
     }
 
     100% {
@@ -139,18 +144,18 @@
     }
 }
 
-/*ハンバーガーボタン*/
-#ham_bu {
+#nav_b {
+    background: none;
+    border: none;
     display: flex;
-    transition: all 0.5s;
-    height: 120px;
+    position: fixed;
+    border: 2px solid red;
     width: 120px;
 }
 
 #nav_b::after,
 #nav_b::before {
     position: absolute;
-    margin : 0;
     top: calc(50% - 1px);
     content: '';
     width: 90%;
@@ -185,20 +190,15 @@
     font-family: 'Kosugi Maru', sans-serif;
     width: 100%;
     border: 2px solid green;
+    width: 120px;
+    height: 100%;
+    vertical-align: middle;
+    top:50%;
 }
 #nav_p.hamoff { 
     opacity: 0;
 }
 
-#nav_b {
-    height: 120px;
-    width: 120px;
-    background: none;
-    border: none;
-    display: flex;
-    position: fixed;
-    border:2px solid red;
-}
 
 /*ハンバーガーメニュー*/
 #ham_base {
