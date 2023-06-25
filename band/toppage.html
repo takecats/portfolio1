@@ -60,12 +60,13 @@
             navbtn.addEventListener('click', function () {
                 if ( hamtog.style.right == '-' + window.innerWidth + 'px' ) {
                     hamtog.style.right = 0 + 'px';
+                        navbtn.classList.add('hamoff');
+                        navp.classList.add('hamoff');
                 }else{
                     hamtog.style.right = '-' + window.innerWidth + 'px';
+                        navbtn.classList.remove('hamoff');
+                        navp.classList.remove('hamoff');
                 };
-
-                navbtn.classList.toggle('hamoff');
-                navp.classList.toggle('hamoff');
                 });
             
         </script>

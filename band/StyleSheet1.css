@@ -52,7 +52,7 @@
 
 #header_icon img {
     width: 18%;
-    min-width: 200px;
+    min-width: 250px;
     margin: 10px;
     z-index: 50;
     display: flex;
@@ -196,26 +196,25 @@
     transition: right 0.6s cubic-bezier(0.2,0.8,0.6,0.9);
     background-color: rgba(170,170,170,0.98);
     opacity: 0.9;
-    padding-top: 60px;
+    padding-top: 80px;
     height: 100%;
 }
 
 #ham_menu {
     height: 90%;
-    margin-top: 50px;
 }
 
 .ham_komoku {
-    margin-top: 15px;
-    margin-left: 10%;
-    height: 4%;
+    margin-top: 2%;
+    margin-left: 7%;
+    height: 5%;
 }
 
 
     .ham_komoku a {
         color: #4e454a;
         font-family: 'Montserrat', sans-serif;
-        font-size: 5vh;
+        font-size: 5rem;
         text-decoration: none;
     }
 
