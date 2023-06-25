@@ -55,7 +55,16 @@
             });
         </script>
         <div id="top_photo">
-            <img src="img/photo/topphoto3.jpeg" alt="TOP" class="topp1">
+            <img src="img/photo/topphoto3.jpeg"  alt="TOP" id="topp1">
+            <script>
+                var nekoneko = document.getElementById('topp1');
+
+                nekoneko.style.height = window.innerHeight + 'px';
+
+                window.addEventListener('resize', function () {
+                    nekoneko.style.height = window.innerHeight + 'px';
+                });
+            </script>
             <img src="img/logow.png" alt="top" class="logogo">
         </div>
         <!--end header-->

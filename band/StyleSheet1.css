@@ -1,6 +1,6 @@
 ﻿body {
     background-color: #2b2b2b;
-    margin:0;
+    margin: 0;
 }
 
 /*TOP-LOGO*/
@@ -34,9 +34,11 @@
     }
 }
 
-.topp1 {
-    width: 100%;
+#topp1 {
     vertical-align: bottom;
+    object-fit:cover;
+    object-position: 50% 80%;
+    width: 100%;
 }
 
 #top_photo{
@@ -50,7 +52,7 @@
 
 #header_icon img {
     width: 18%;
-    min-width: 100px;
+    min-width: 200px;
     margin: 10px;
     z-index: 50;
     display: flex;
@@ -126,10 +128,9 @@
     background: none;
     border: none;
     position: fixed;
-    width: 120px;
     transition: all 0.5s;
-    height: 120px;
-    width: 120px;
+    height: 90px;
+    width: 90px;
     z-index: 20;
     margin-top: 20px;
     animation-name: rightham;
@@ -148,18 +149,18 @@
         top: calc(50% - 1px);
         content: '';
         width: 80%;
-        height: 8px;
+        height: 4px;
         background: #FFFFFF;
         transition: transform 0.3s;
     border-radius:20px;
     }
 
 #nav_b::before {
-    transform: translateY(-43px);
+    transform: translateY(-32px);
 }
 
 #nav_b::after {
-    transform: translateY(37px)
+    transform: translateY(28px)
 }
 
 #nav_b.hamoff::before {
@@ -174,7 +175,7 @@
     transition: opacity 0.3s;
     opacity: 1;
     color: #FFFFFF;
-    font-size: 45px;
+    font-size: 35px;
     font-family: 'Kosugi Maru', sans-serif;
     width: 100%;
     display: flex;
@@ -435,7 +436,6 @@
     justify-content: center;
     text-decoration: none;
     position: relative;
-    transition: border 0.6s cubic-bezier(0.2,0.8,0.6,0.9);
     overflow: hidden;
 }
 
@@ -449,7 +449,7 @@
         height: 100%;
         transform: translateY(100%);
         z-index: -1;
-        transition-duration: 0.5s;
+        transition-duration: 0.2s;
     }
 
     #discomore.discof::after {
@@ -461,7 +461,7 @@
     font-size: 30px;
     z-index: 1;
     color: #FFFFFF;
-    transition-duration: 0.5s;
+    transition-duration: 0.2s;
 }
 
     #discomore_a.discoff {
