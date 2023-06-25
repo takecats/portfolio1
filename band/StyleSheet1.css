@@ -1,7 +1,6 @@
 ﻿body {
     background-color: #2b2b2b;
-    width: 100%;
-    margin: 0;
+    margin:0;
 }
 
 /*TOP-LOGO*/
@@ -60,12 +59,12 @@
     animation-duration: 2s;
     animation-fill-mode: forwards;
     animation-delay: 2s;
-    opacity: 1;
+    opacity: 0;
 }
 
 @keyframes headlogo {
     0% {
-        opacity: 1;
+        opacity: 0;
     }
 
     100% {
@@ -112,31 +111,10 @@
     display: flex;
 }
 
-
 /*ハンバーガーボタン*/
-#ham_bu {
-    display: flex;
-    transition: all 0.5s;
-    height: 120px;
-    width: 120px;
-    background: none;
-    border: none;
-    z-index: 20;
-    margin-top: 50px;
-    right: 20px;
-    position: fixed;
-    text-align: center;
-    animation-name: rightham;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-    animation-delay: 2s;
-    opacity: 1;
-    border: 2px solid blue;
-}
-
 @keyframes rightham {
     0% {
-        opacity: 1;
+        opacity: 0;
     }
 
     100% {
@@ -147,23 +125,34 @@
 #nav_b {
     background: none;
     border: none;
-    display: flex;
     position: fixed;
-    border: 2px solid red;
     width: 120px;
+    transition: all 0.5s;
+    height: 120px;
+    width: 120px;
+    z-index: 20;
+    margin-top: 20px;
+    animation-name: rightham;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    right:20px;
 }
 
-#nav_b::after,
-#nav_b::before {
-    position: absolute;
-    top: calc(50% - 1px);
-    content: '';
-    width: 90%;
-    height: 8px;
-    background: #FFFFFF;
-    transition: transform 0.3s;
+    #nav_b::after,
+    #nav_b::before {
+        position: absolute;
+        top: calc(50% - 1px);
+        content: '';
+        width: 80%;
+        height: 8px;
+        background: #FFFFFF;
+        transition: transform 0.3s;
     border-radius:20px;
-}
+    }
 
 #nav_b::before {
     transform: translateY(-43px);
@@ -182,19 +171,17 @@
 }
 
 #nav_p {
-    margin: auto;
     transition: opacity 0.3s;
     opacity: 1;
     color: #FFFFFF;
     font-size: 45px;
     font-family: 'Kosugi Maru', sans-serif;
     width: 100%;
-    border: 2px solid green;
-    width: 120px;
-    height: 100%;
-    vertical-align: middle;
-    top:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 #nav_p.hamoff { 
     opacity: 0;
 }
