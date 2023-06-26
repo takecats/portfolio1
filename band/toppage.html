@@ -127,25 +127,13 @@
                         <p id="topixmore_a">MORE</p>
                     </div>
                 </a>
-                <script>
-                    const topmore = document.getElementById('topixmore');
-                    const topmorep = document.getElementById('topixmore_a');
 
-                    topmore.addEventListener('mouseover', function (event) {
-                        topmorep.classList.add('topoff');
-                        topmore.classList.add('topof');
-                    });
-                    topmore.addEventListener('mouseleave', function (event) {
-                        topmorep.classList.remove('topoff');
-                        topmore.classList.remove('topof');
-                    });
-                </script>
             </div>
             <div class="disco_head"><p>DISCOGRAPHY</p></div>
             <div id="disco_graph">
-                <div class="disco_photo"><img src="img/photo/element.png" alt="TOP" border="0"><br />1st Album「Element」</div>
-                <div class="disco_photo"><img src="img/photo/tower.png" alt="TOP" border="0"><br />4th Single「Tower」</div>
-                <div class="disco_photo"><img src="img/photo/dune.png" alt="TOP" border="0"><br />3rd Single「DUNE」</div>
+                <div id="disco_photo_a"><img src="img/photo/element.png" alt="TOP" border="0"><br /><p id="dppa">1st Album「Element」</p></div>
+                <div id="disco_photo_b"><img src="img/photo/tower.png" alt="TOP" border="0"><br /><p id="dppb">4th Single「Tower」</p></div>
+                <div id="disco_photo_c"><img src="img/photo/dune.png" alt="TOP" border="0"><br /><p id="dppc">3rd Single「DUNE」</p></div>
                 <div>
                     <a href="toppage.html" id="discomore">
                         <div>
@@ -153,18 +141,46 @@
                         </div>
                     </a>
                     <script>
-                        const discomore = document.getElementById('discomore');
-                        const discomorep = document.getElementById('discomore_a');
+                        const dispa = document.getElementById('disco_photo_a');
+                        const dispb = document.getElementById('disco_photo_b');
+                        const dispc = document.getElementById('disco_photo_c');
+                        const dppa = document.getElementById('dppa');
+                        const dppb = document.getElementById('dppb');
+                        const dppc = document.getElementById('dppc');
+                        const dppm = document.getElementById('discomore');
 
-                        discomore.addEventListener('mouseover', function (event) {
-                            discomorep.classList.add('discoff');
-                            discomore.classList.add('discof');
+                        const observer = new IntersectionObserver((entries) => {
+                            for (const e of entries) {
+                                if (e.isIntersecting) {
+                                    dispa.classList.add('photof');
+                                    dispb.classList.add('photof');
+                                    dispc.classList.add('photof');
+                                    dppa.classList.add('dppof');
+                                    dppb.classList.add('dppof');
+                                    dppc.classList.add('dppof');
+                                    dppm.classList.add('discof');
+                                }
+                            };
                         });
-                        discomore.addEventListener('mouseleave', function (event) {
-                            discomorep.classList.remove('discoff');
-                            discomore.classList.remove('discof');
-                        });
+                        observer.observe(document.getElementById('disco_photo_a'))
                     </script>
+                    <!--<script>
+        const dismore = document.getElementById('discomore');
+        const dismorep = document.getElementById('discomore_a');
+
+        const observer = new IntersectionObserver((entries) => {
+            for (const e of entries) {
+                if (e.isIntersecting) {
+                    dismore.classList.add('discof');
+                    dismorep.classList.add('discoff');
+                } else {
+                    dismore.classList.remove('discof');
+                    dismorep.classList.remove('discoff');
+                };
+            };
+        });
+        observer.observe(document.getElementById('discomore'))
+    </script>-->
                 </div>
 
             </div>
