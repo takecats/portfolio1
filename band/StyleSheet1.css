@@ -1,7 +1,6 @@
 ﻿body {
     background-color: #2b2b2b;
     margin: 0;
-    overflow:hidden;
 }
 
 /*TOP-LOGO*/
@@ -250,6 +249,7 @@
     max-width: 1290px;
     color: white;
     font-family: 'Noto Sans JP', sans-serif;
+    overflow: hidden;
 }
 
 /*TOPIX*/
