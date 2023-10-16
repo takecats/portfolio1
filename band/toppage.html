@@ -35,7 +35,8 @@
             <div class="ham_komoku"><a href="toppage.html">GOODS</a></div>
             <div class="ham_komoku"><a href="toppage.html"></a></div>
         </div>
-        <div id="snss"><p>SNS</p>
+        <div id="snss">
+            <p>SNS</p>
             <a href="toppage.html" class="twhpicon">
                 <div>
                     <img src="img/twi.png" border="0" title="Twitter" class="twhiplogo">
@@ -48,115 +49,108 @@
             </a>
         </div>
     </div>
-        <script src="ham.js"></script>
-        <div id="top_photo">
-            <img src="img/photo/topphoto3.jpeg"  alt="TOP" id="topp1">
-            <script>
-                var nekoneko = document.getElementById('topp1');
+    <script src="ham.js"></script>
+    <div id="top_photo">
+        <img src="img/photo/topphoto3.jpeg" alt="TOP" id="topp1">
+        <script>
+            var nekoneko = document.getElementById('topp1');
 
+            nekoneko.style.height = window.innerHeight + 'px';
+
+            window.addEventListener('resize', function () {
                 nekoneko.style.height = window.innerHeight + 'px';
-
-                window.addEventListener('resize', function () {
-                    nekoneko.style.height = window.innerHeight + 'px';
-                });
-            </script>
-            <img src="img/logow.png" alt="top" class="logogo">
-        </div>
-        <!--end header-->
-        <div id="base">
-            <div class="base_head"><p>NEWS</p></div>
-            <div class="topixco">
-                <div class="topix_cu">
-                    <div class="topix_media">
-                        MEDIA<br />2023/6/21
-                    </div>
-                    <div class="topixbun">
-                        MEDIA情報「Rock Stone 7月号」掲載
-                    </div>
+            });
+        </script>
+        <img src="img/logow.png" alt="top" class="logogo">
+    </div>
+    <!--end header-->
+    <div id="base">
+        <div class="base_head"><p>NEWS</p></div>
+        <div class="topixco">
+            <div class="topix_cu">
+                <div class="topix_media">
+                    MEDIA<br />2023/6/21
                 </div>
-                <div class="topix_cu">
-                    <div class="topix_tour">
-                        LIVE<br />2023/6/20
-                    </div>
-                    <div class="topixbun">
-                        1st Album Release Tour「Element TOUR」開催決定
-                    </div>
+                <div class="topixbun">
+                    MEDIA情報「Rock Stone 7月号」掲載
                 </div>
-                <div class="topix_cu">
-                    <div class="topix_disco">
-                        RELEASE<br />2023/6/19
-                    </div>
-                    <div class="topixbun">
-                        6/19 1st Album「Element」Release
-                    </div>
-                </div>
-                <a href="NEWSpage.html" id="topixmore">
-                    <div>
-                        <p id="topixmore_a">MORE</p>
-                    </div>
-                </a>
-
             </div>
-            <div class="disco_head"><p>DISCOGRAPHY</p></div>
-            <div id="disco_graph">
-                <div id="disco_photo_a"><img src="img/photo/element.png" alt="TOP" border="0"><br /><p id="dppa">1st Album「Element」</p></div>
-                <div id="disco_photo_b"><img src="img/photo/tower.png" alt="TOP" border="0"><br /><p id="dppb">4th Single「Tower」</p></div>
-                <div id="disco_photo_c"><img src="img/photo/dune.png" alt="TOP" border="0"><br /><p id="dppc">3rd Single「DUNE」</p></div>
+            <div class="topix_cu">
+                <div class="topix_tour">
+                    LIVE<br />2023/6/20
+                </div>
+                <div class="topixbun">
+                    1st Album Release Tour「Element TOUR」開催決定
+                </div>
+            </div>
+            <div class="topix_cu">
+                <div class="topix_disco">
+                    RELEASE<br />2023/6/19
+                </div>
+                <div class="topixbun">
+                    6/19 1st Album「Element」Release
+                </div>
+            </div>
+            <a href="toppage.html" id="topixmore">
                 <div>
-                    <a href="toppage.html" id="discomore">
-                        <div>
-                            <p id="discomore_a">MORE</p>
-                        </div>
-                    </a>
-                    <script>
-                        const dispa = document.getElementById('disco_photo_a');
-                        const dispb = document.getElementById('disco_photo_b');
-                        const dispc = document.getElementById('disco_photo_c');
-                        const dppa = document.getElementById('dppa');
-                        const dppb = document.getElementById('dppb');
-                        const dppc = document.getElementById('dppc');
-                        const dppm = document.getElementById('discomore');
-
-                        const observer = new IntersectionObserver((entries) => {
-                            for (const e of entries) {
-                                if (e.isIntersecting) {
-                                    dispa.classList.add('photof');
-                                    dispb.classList.add('photof');
-                                    dispc.classList.add('photof');
-                                    dppa.classList.add('dppof');
-                                    dppb.classList.add('dppof');
-                                    dppc.classList.add('dppof');
-                                    dppm.classList.add('discof');
-                                }
-                            };
-                        });
-                        observer.observe(document.getElementById('disco_photo_a'))
-                    </script>
-                    <!--<script>
-        const dismore = document.getElementById('discomore');
-        const dismorep = document.getElementById('discomore_a');
-
-        const observer = new IntersectionObserver((entries) => {
-            for (const e of entries) {
-                if (e.isIntersecting) {
-                    dismore.classList.add('discof');
-                    dismorep.classList.add('discoff');
-                } else {
-                    dismore.classList.remove('discof');
-                    dismorep.classList.remove('discoff');
-                };
-            };
-        });
-        observer.observe(document.getElementById('discomore'))
-    </script>-->
+                    <p id="topixmore_a">MORE</p>
                 </div>
+            </a>
 
+        </div>
+        <div class="disco_head"><p>DISCOGRAPHY</p></div>
+
+        <div id="giraffe_base">
+            <div id="kirin"><div id="modoru"><p>&lt;</p></div><div id="susumu"><p>&gt;</p></div></div>
+            <img id="disco_giraffe" src="img/photo/element.png">
+        </div>
+        <a href="toppage.html" id="kirinmore">
+            <div>
+                <p id="topixmore_a">MORE</p>
             </div>
+        </a>
+        <script>
+            const dispics = ["img/photo/element.png", "img/photo/tower.png", "img/photo/dune.png"];
+            const susu = document.getElementById('susumu');
+            const modo = document.getElementById('modoru');
+            const kiriin = document.getElementById('disco_giraffe');
+
+
+            let num = 0;
+
+            susu.addEventListener('click', function () {
+                kiriin.style.opacity = 0;
+                setTimeout(()=> {
+                if (num === 2) {
+                    num = 0;
+                } else {
+                    num++;
+                }
+                document.getElementById("disco_giraffe").src = dispics[num];
+                    },200);
+                setTimeout(()=> {kiriin.style.opacity = 1;},230);
+            });
+
+            modo.addEventListener('click', function () {
+                kiriin.style.opacity = 0;
+                setTimeout(()=> {
+                if (num === 0) {
+                    num = 2;
+                } else {
+                    num--;
+                }
+                document.getElementById("disco_giraffe").src = dispics[num];
+                    },200);
+                setTimeout(()=> {kiriin.style.opacity = 1;},230);
+            });
+        </script>
+        <!--setTimeout(()=> {
+    },3000);-->
+
+    </div>
             <div class="video_head"><p>VIDEO</p></div>
             <div class="video_ply">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/TanZP7g13sk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/TanZP7g13sk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
-        </div>
-        <center>hello neko</center>
 </body>
 </html>
